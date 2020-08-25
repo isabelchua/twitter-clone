@@ -16,16 +16,16 @@ function Widgets() {
 			</div>
 			<div className="widgets__widgetContainer">
 				<h2>What's happening</h2>
-				<TwitterTweetEmbed tweetId={'858551177860055040'} />
+				<TwitterTweetEmbed tweetId={'1298351204179816449'} />
 				<TwitterTimelineEmbed
 					sourceType="profile"
-					screenName="cleverqazi"
+					screenName="sfchronicle"
 					options={{ height: 400 }}
 				/>
 
 				<TwitterShareButton
-					url={'https://facebook.com/cleverprogrammer'}
-					options={{ text: '#reactjs is awesome', via: 'cleverqazi' }}
+					url={' '}
+					options={{ text: '#lifeisawesome :)', via: 'isabelchua6' }}
 				/>
 			</div>
 		</div>

@@ -11,13 +11,18 @@ function TweetBox() {
 	const sendTweet = e => {
 		e.preventDefault();
 
+		if (!tweetMessage && !tweetImage) {
+			alert('Enter Tweet!');
+			return;
+		}
+
 		db.collection('posts').add({
-			displayName: 'Isabel Chua',
-			username: 'isabelchua9',
+			displayName: 'Anonymous User',
+			username: 'test_user',
 			verified: true,
 			text: tweetMessage,
 			image: tweetImage,
-			avatar: 'https://i.imgur.com/rryHjrE.jpg'
+			avatar: 'https://i.imgur.com/l6soTSl.png'
 		});
 		setTweetMessage('');
 		setTweetImage('');
@@ -27,12 +32,13 @@ function TweetBox() {
 		<div className="tweetBox">
 			<form>
 				<div className="tweetBox__input">
-					<Avatar src="https://i.imgur.com/rryHjrE.jpg" />
+					<Avatar src="https://i.imgur.com/l6soTSl.png" />
 					<input
 						onChange={e => setTweetMessage(e.target.value)}
 						value={tweetMessage}
 						placeholder="What's happening"
 						type="text"
+						required
 					/>
 				</div>
 				<input
