@@ -3,6 +3,10 @@ import './TweetBox.css';
 import { Avatar, Button } from '@material-ui/core';
 import { useState } from 'react';
 import db from './firebase';
+//import nextId from 'react-id-generator';
+import { v4 as uuid } from 'uuid';
+
+//const [htmlId] = nextId('id-');
 
 function TweetBox() {
 	const [tweetMessage, setTweetMessage] = useState('');
@@ -17,6 +21,7 @@ function TweetBox() {
 		}
 
 		db.collection('posts').add({
+			postId: uuid(),
 			displayName: 'Anonymous User',
 			username: 'test_user',
 			verified: true,
@@ -32,13 +37,17 @@ function TweetBox() {
 		<div className="tweetBox">
 			<form>
 				<div className="tweetBox__input">
-					<Avatar src="https://i.imgur.com/l6soTSl.png" />
+					{window.screen.availWidth > 560 ? (
+						<Avatar src="https://i.imgur.com/l6soTSl.png" />
+					) : (
+						''
+					)}
 					<input
 						onChange={e => setTweetMessage(e.target.value)}
 						value={tweetMessage}
-						placeholder="What's happening"
+						placeholder="What's happening?"
 						type="text"
-						required
+						id={uuid()}
 					/>
 				</div>
 				<input
