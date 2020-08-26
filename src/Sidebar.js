@@ -11,6 +11,7 @@ import ListAltIcon from '@material-ui/icons/ListAlt';
 import PermIdentityIcon from '@material-ui/icons/PermIdentity';
 import MoreHorizIcon from '@material-ui/icons/MoreHoriz';
 import { Button } from '@material-ui/core';
+import { Avatar } from '@material-ui/core';
 
 function Sidebar() {
 	return (
@@ -27,6 +28,14 @@ function Sidebar() {
 			<Button variant="outline" className="sidebar__tweet" fullWidth>
 				Tweet
 			</Button>
+
+			<div className="sidebar_profile">
+				<Avatar src="https://i.imgur.com/l6soTSl.png" />
+				<h3>
+					Anonymous User
+					<span className="post__headerSpecial">@test_user</span>
+				</h3>
+			</div>
 		</div>
 	);
 }

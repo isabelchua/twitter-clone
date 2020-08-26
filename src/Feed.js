@@ -23,7 +23,9 @@ function Feed() {
 			<div className="feed__header">
 				{window.screen.availWidth <= 560 ? (
 					<Avatar src="https://i.imgur.com/l6soTSl.png" />
-				) : null}
+				) : (
+					''
+				)}
 				<h2>Home</h2>
 			</div>
 			<TweetBox />

@@ -10,7 +10,7 @@
 	background-color: var(--twitter-color) !important;
 	border: none !important;
 	color: white !important;
-	font-weight: 900 !important;
+	font-weight: 600 !important;
 	text-transform: inherit !important;
 	border-radius: 30px !important;
 	height: 50px !important;
@@ -21,4 +21,16 @@
 	color: var(--twitter-color);
 	font-size: 30px !important;
 	margin: 0 20px;
+}
+
+.sidebar_profile {
+	display: flex;
+	position: fixed;
+	bottom: 20px;
+}
+
+.sidebar_profile h3 {
+	display: flex;
+	margin-left: 10px;
+	flex-direction: column;
 }
