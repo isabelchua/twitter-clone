@@ -5,7 +5,10 @@ import { useState } from 'react';
 import db from './firebase';
 //import nextId from 'react-id-generator';
 import { v4 as uuid } from 'uuid';
+<<<<<<< HEAD
 import * as firebase from 'firebase';
+=======
+>>>>>>> a7d2d04620ba1935c275a98d22173be2b0a3cbd3
 
 //const [htmlId] = nextId('id-');
 
@@ -22,7 +25,10 @@ function TweetBox() {
 		}
 
 		db.collection('posts').add({
+<<<<<<< HEAD
 			timestamp: firebase.firestore.FieldValue.serverTimestamp(),
+=======
+>>>>>>> a7d2d04620ba1935c275a98d22173be2b0a3cbd3
 			postId: uuid(),
 			displayName: 'Anonymous User',
 			username: 'test_user',
