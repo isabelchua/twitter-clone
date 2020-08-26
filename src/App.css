@@ -10,3 +10,48 @@ body {
 	margin: 0 auto;
 	padding: 0 10px;
 }
+
+::placeholder {
+	/* Chrome, Firefox, Opera, Safari 10.1+ */
+	color: rgb(207, 207, 207);
+	opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+	/* Internet Explorer 10-11 */
+	color: rgb(207, 207, 207);
+}
+
+::-ms-input-placeholder {
+	/* Microsoft Edge */
+	color: rgb(207, 207, 207);
+}
+
+@media only screen and (max-width: 660px) {
+	.app {
+		padding: 0px;
+	}
+
+	.feed__header > h2 {
+		margin-left: 30px;
+	}
+
+	.feed {
+		flex: 1 !important;
+	}
+
+	.feed__header {
+		padding: 15px 20px;
+	}
+
+	.tweetBox__imageInput {
+		margin-left: 35px;
+	}
+
+	.sidebar {
+		display: none;
+	}
+	.widgets {
+		display: none;
+	}
+}

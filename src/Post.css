@@ -25,6 +25,11 @@
 	margin-bottom: 5px;
 }
 
+.post__headerText > {
+	display: flex;
+	align-items: center;
+}
+
 .post__headerSpecial {
 	font-weight: 600;
 	font-size: 12px;
