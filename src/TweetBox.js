@@ -3,11 +3,8 @@ import './TweetBox.css';
 import { Avatar, Button } from '@material-ui/core';
 import { useState } from 'react';
 import db from './firebase';
-//import nextId from 'react-id-generator';
 import { v4 as uuid } from 'uuid';
 import * as firebase from 'firebase';
-
-//const [htmlId] = nextId('id-');
 
 function TweetBox() {
 	const [tweetMessage, setTweetMessage] = useState('');
@@ -40,7 +37,7 @@ function TweetBox() {
 			<form>
 				<div className="tweetBox__input">
 					{window.screen.availWidth > 560 ? (
-						<Avatar src="https://i.imgur.com/l6soTSl.png" />
+						<Avatar src="https://i.imgur.com/mQ30dPj.png" />
 					) : (
 						''
 					)}

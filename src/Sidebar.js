@@ -25,12 +25,12 @@ function Sidebar() {
 			<SidebarOption Icon={ListAltIcon} text="Lists" />
 			<SidebarOption Icon={PermIdentityIcon} text="Profile" />
 			<SidebarOption Icon={MoreHorizIcon} text="More" />
-			<Button variant="outline" className="sidebar__tweet" fullWidth>
+			<Button variant="outline" className="sidebar__tweet">
 				Tweet
 			</Button>
 
 			<div className="sidebar_profile">
-				<Avatar src="https://i.imgur.com/l6soTSl.png" />
+				<Avatar src="https://i.imgur.com/mQ30dPj.png" />
 				<h3>
 					Anonymous User
 					<span className="post__headerSpecial">@test_user</span>

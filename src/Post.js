@@ -10,8 +10,8 @@ import PublishIcon from '@material-ui/icons/Publish';
 const Post = forwardRef(
 	(
 		{
-			timestamp,
-			postId,
+			// timestamp,
+			// postId,
 			displayName,
 			username,
 			verified,
